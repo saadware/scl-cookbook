@@ -1,0 +1,14 @@
+---
+driver_plugin: vagrant
+
+driver:
+  require_chef_omnibus: true
+
+platforms:
+- name: opscode-centos-6.5
+
+suites:
+- name: default
+  run_list:
+  - recipe[scl::default]
+  attributes: {}
